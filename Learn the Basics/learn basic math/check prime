@@ -1,0 +1,41 @@
+Problem statement
+Given an integer, check if it is prime or not. Return True if the number is prime, otherwise False.
+
+
+
+Note:
+No need to print anything; it has already been handled.
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1 :
+7
+Sample Output 1 :
+ True
+Sample Input 2 :
+15
+Sample Output 2 :
+ False
+
+
+code:
+#include<iostream>
+using namespace std;
+
+int main() {
+	// Write your code here
+	int n;
+	cin>>n;
+	int c=0;
+	for(int i=1;i<=n;i++)
+	{
+		if(i%n==0)
+		{
+			c++;
+		}
+	}
+	if(c==2)
+	{
+		return true;
+	}
+	return false;
+	
+}
